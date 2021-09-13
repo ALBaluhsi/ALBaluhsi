@@ -1,0 +1,14 @@
+#read a counter, from the counter, input numbers, store or save
+#numbers in a list. Compute for the sum of all the numbers
+myNumbers=[]
+sum=0
+counter = int(input("enter how many numbers:"))
+for x in range(counter):
+    number = int(input("enter number :"))
+    myNumbers = myNumbers + [number] #myNumbers.append(number)
+print(myNumbers)
+for x in myNumbers:
+    sum = sum + x
+print("the sum of the numbers is :", sum)
+print("Lowest :", min(myNumbers))
+print("highest :", max(myNumbers))
